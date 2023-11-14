@@ -20,7 +20,7 @@ public class C03_getMethodlari {
             Selenium webdriver yerine indirdigimiz driver.exe dosyasini kullanmaya devam edecegiz
          */
 
-        System.setProperty("Webdriver.chrome.driver","kurulumDosyalari/chromedriver");
+        System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
