@@ -13,18 +13,16 @@ public class C01_getMethodlari {
         driver.manage().window().maximize();
 
         driver.get("https://testotomasyonu.com");
-        Thread.sleep(3000);
+
 
         driver.get("https://wisequarter.com");
-        Thread.sleep(3000);
+
 
         // driver.get("www.youtube.com");
         // driver.get() https:// yazilmadan calismaz
 
         driver.get("https://youtube.com");
 
-
-        Thread.sleep(10000);
 
         driver.close();
     }
