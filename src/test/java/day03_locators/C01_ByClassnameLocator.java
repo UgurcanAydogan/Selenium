@@ -48,18 +48,18 @@ public class C01_ByClassnameLocator {
         // her bir webelementi ele alip, uzerindeki yaziyi yazdirmamiz gerekir
 
         /*
-        yazdirma islemini bir for-each loop ile yapabiliriz
-        ama biz bu islemi cok kullanacagimiz icin
-        bir method olusturup
-        webelementlerden olusan listeyi
-        String'lerden olusan bir listeye cevirdik
+           yazdirma islemini bir for-each loop ile yapabiliriz
+           ama biz bu islemi cok kullanacagimiz icin
+           bir method olusturup
+           webelementlerden olusan listeyi
+           String'lerden olusan bir listeye cevirdik
 
 
-        for (WebElement each:kategoriElementleriList
-             ) {
+            for (WebElement each:kategoriElementleriList
+                 ) {
 
             System.out.println(each.getText());
-        }
+            }
 
          */
 
