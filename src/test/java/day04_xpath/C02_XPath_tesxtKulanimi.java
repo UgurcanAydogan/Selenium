@@ -8,8 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C01_Xpath {
-    public static void main(String[] args) throws InterruptedException {
+public class C02_XPath_tesxtKulanimi {
+
+   /*
+        Xpath link olmasa bile yazisi olan webelementleri
+        yazi ile locate etmemize imkan tanir
+     */
+
+
+    public static void main(String[] args) {
 
         System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -22,7 +29,7 @@ public class C01_Xpath {
 
         //2- Add Element butonuna basin
 
-        driver.findElement(By.xpath("//button[.='Add']")).click();
+        driver.findElement(By.xpath("//button[text()='Add']")).click();
 
         //3- Remove butonu’nun gorunur oldugunu test edin
 
@@ -38,7 +45,7 @@ public class C01_Xpath {
 
         //5- “Add/Remove Elements” yazisinin gorunur oldugunu test edin
 
-        WebElement addRemoveYaziElementi = driver.findElement(By.xpath("//*[contains(text(),'Remove Elements')]"));
+        WebElement addRemoveYaziElementi = driver.findElement(By.xpath("//*[text()='Add/Remove Elements']"));
 
         if (addRemoveYaziElementi.isDisplayed()){
             System.out.println("Add Remove Yazisi gorunme testi PASSED");
